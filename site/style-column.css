@@ -1,0 +1,264 @@
+/*Gestions des polices de la landing page*/
+
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@200&display=swap');
+
+html {
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Blinker', sans-serif;
+    font-size: 196pt;
+    color: #E74E00;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 72pt;
+    line-height: 96pt;
+
+
+}
+
+p {
+    font-size: 24pt;
+    line-height: 32pt;
+}
+
+body > footer > ul > li > a {
+    color: black;
+}
+
+li {
+    list-style-type: none;
+}
+
+a,button {
+    font-size: 24pt;
+    text-decoration: none;
+    font-family: "Segoe UI Semibold";
+
+}
+
+/*---------------------------------      nav      -------------------------------------*/
+/*navigation de la landing page*/
+
+
+nav {
+    min-height: 90px;
+    height: auto;
+    width: 100vw;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+nav ul {
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+
+}
+
+nav li {
+    display: flex;
+
+}
+
+nav a {
+    margin: auto;
+    color: #fff;
+}
+
+nav > a.first_child {
+
+}
+
+/*---------------------------------      body      -------------------------------------*/
+
+
+/*---------------------------------      main      -------------------------------------*/
+
+/*a des divs*/
+body > main button {
+    width: 260px;
+    min-height: 80px;
+    height: auto;
+    background-color: #ffffff;
+    border-radius: 99999px;
+    margin: 70px 0;
+    border-width: 4px;
+    border-color: black;
+}
+
+
+/* DIV flex en colonne*/
+
+body > main > div {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+/*Changer la couleur des div en noir*/
+
+body > main > div:nth-child(2n), body > aside > div {
+    background-color: #000;
+    opacity: 80%;
+    color: white;
+
+}
+
+body > main > div:nth-child(2n+3) {
+    flex-flow: row-reverse;
+
+}
+
+body > main > div:first-child {
+    flex-flow: column;
+}
+
+
+/*Styles des contenus dans les divs*/
+
+h1 {
+    margin: 70px 140px;
+}
+
+body > main > div > div > a {
+    margin: 70px 140px;
+}
+
+body > main > div > div > h2 {
+    margin: 70px 140px;
+
+    max-width: 30vw;
+}
+
+body > main > div > div > p, .p_h1 {
+    max-width: 30vw;
+    margin: 70px 140px;
+    font-size: 36px;
+
+}
+
+body > main > div > svg {
+    margin: 140px;
+}
+
+/*---------------------------------      aside      -------------------------------------*/
+
+
+body > aside > div {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+body > aside > div > p {
+    max-width: 30vw;
+    margin: 70px 140px;
+}
+body > aside > div > ul {
+    max-width: 30vw;
+    padding: 140px;
+    margin: 140px;
+}
+
+body > aside button {
+    width: 260px;
+    min-height: 80px;
+    height: auto;
+    background-color: #ffffff;
+    border-radius: 99999px;
+    margin: 5px 140px;
+    border-color: black;
+}
+/*---------------------------------      footer      -------------------------------------*/
+
+
+body > footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+bady > footer svg {
+    margin: 0 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.crowdfunding{
+    width: 100%;
+}
+
+/*Titre de page équipe*/
+.titre_equipe{
+    font-family: Segoe UI, Arial;
+    font-size: 96pt;
+    color: black;
+}
+
+
+/*Header page equipe*/
+.header_equipe{
+}
+
+.soutien{
+    font-size: 36px;
+}
+
+.bouton_soutien{
+    width: 260px;
+    min-height: 80px;
+    height: auto;
+    background-color: #ffffff;
+    border-radius: 99999px;
+    margin: 5px 0;
+    border-color: black;
+    border-width: 4px;
+}
+
+li.soutien, svg.soutien {
+    align-self: center;
+    margin: auto;
+}
+
+div.equipe {
+    display: flex;
+
+}
+
+div.equipe div {
+    display: flex;
+    margin: 140px;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+div.equipe p {
+    max-width: 25vw;
+    min-width: 400px;
+}
+
+@media screen and (max-width: 1875px ){
+    div.equipe {
+        flex-direction: column;
+    }
+
+}
